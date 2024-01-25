@@ -1,0 +1,134 @@
+/***********************************************************/
+/*               ESTILO DE INSERCCION.HTML                 */
+/*               FRANCISCO ROMERO ZARCO                   */
+/*                                                        */
+/**********************************************************/
+
+
+
+
+
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../Imagenes/r8\ fondo.jpg);
+    background-size: cover;
+}
+
+form {
+    width: 80%;
+    margin-top: 250px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px #ffa500;
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+#datos{
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: #ffa500;
+}
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+    display: inline-block;
+    
+}
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+    color: white;
+}
+
+a {
+    color: #ffa500;
+}
+.gender-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.gender-selector label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gender-selector input {
+    display: none;
+}
+
+.gender-selector span {
+    margin-top: 5px;
+}
+
+
+.gender-selector input:checked+span {
+    color: #ffa500;
+    
+}
+/*******RESPONSIVE*********/
+@media only screen and (max-width: 600px) {
+    form {
+        width: 95%;
+        padding: 15px; 
+    }
+}
