@@ -1,9 +1,9 @@
-/***********************************************************/
-/*               ESTILO DE INSERCCION.HTML                 */
-/*               FRANCISCO ROMERO ZARCO                   */
-/*                                                        */
-/**********************************************************/
-
+/******************************************************/
+/*           Hoja de estilo de modificacion.html      */
+/*           Autor: Francisco Romero Zarco            */
+/*                   16/01/2024                       */
+/*                Lengaje de marcas                   */
+/******************************************************/
 
 body {
     background-color: black;
@@ -18,7 +18,7 @@ body {
 
 form {
     width: 80%;
-    margin-top: 250px;
+    margin-top: 50px;
     max-width: 600px;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
@@ -32,12 +32,42 @@ form {
 form:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-#datos{
+
+#datos {
     color: white;
 }
+
 h2 {
     text-align: center;
     color: #ffa500;
+}
+
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.profile-picture input {
+    display: none;
+}
+
+.profile-picture label {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-picture label:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 fieldset {
@@ -67,12 +97,12 @@ select {
     outline: none;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
     display: inline-block;
-    
 }
+
 input[type="radio"] {
     display: inline-block;
     margin-right: 10px;
@@ -95,6 +125,7 @@ button:hover {
 a {
     color: #ffa500;
 }
+
 .gender-selector {
     display: flex;
     justify-content: space-between;
@@ -116,15 +147,14 @@ a {
     margin-top: 5px;
 }
 
-
 .gender-selector input:checked+span {
     color: #ffa500;
-    
 }
-/*******RESPONSIVE*********/
+
+/******* RESPONSIVE ******/
 @media only screen and (max-width: 600px) {
     form {
         width: 95%;
-        padding: 15px; 
+        padding: 15px;
     }
 }
