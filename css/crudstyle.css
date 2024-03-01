@@ -9,6 +9,7 @@ body {
     background-image: url(../Imagenes/fondocrud.jpg);
     background-size: cover;
     background-color: white;
+    margin: 0;
 }
 
 #container {
@@ -81,6 +82,48 @@ tr:first-child {
 .default:hover {background: #ddd;}
 
 
+
+/* Estilos para la ventana de confirmación */
+.confirmation-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    text-align: center;
+}
+
+.confirmation-dialog p {
+    margin: 0 0 10px;
+}
+
+.confirmation-dialog button {
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmation-dialog button.primary {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.confirmation-dialog button.secondary {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+/*********RESPONSIVE************/
 @media only screen and (max-width: 768px) {
     table {
         font-size: 14px;

@@ -13,13 +13,17 @@
     <div class="header">
 
     </div>
-
+    <form action="" method="post" id="form">
     <div class="login">
 		<div class="titulo">Car<span>Hub</span></div>
-        <input type="text" placeholder="Usuario" name="user"><br>
-        <input type="password" placeholder="Contraseña" name="password"><br>
-        <input type="button" value="Login">
+        <input type="text" placeholder="Usuario" name="user" id="usuario">
+        <span id="usuarioHelp" class="help"></span><br>
+        <input type="password" placeholder="Contraseña" name="password" id="contraseña">
+        <span id="contraseñaHelp" class="help"></span><br>
+        <input type="button" value="Login" id="LoginBoton">
         <input type="button" value="Sing up" href="formularioinser.html">
+    </form>
     </div>
+    <script src="./js/validacionLogin_Listado.js"></script>
 </body>
 </html>

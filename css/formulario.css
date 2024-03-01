@@ -121,6 +121,12 @@ a {
     color: #ffa500;
     
 }
+/*******JS*********/
+.error {
+    color: red !important; }
+
+
+
 /*******RESPONSIVE*********/
 @media only screen and (max-width: 600px) {
     form {
